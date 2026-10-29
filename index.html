@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tochukwu J. Onyiuke, SAN — Advocate · Arbitrator · Author | Official Portal</title>
+<meta name="description" content="Official portal of Tochukwu J. Onyiuke, SAN, MCIArb(UK) — Senior Advocate of Nigeria, commercial litigator, arbitrator and author of The Law of Cyberspace and Decentralised Finance.">
+<style>
+  :root{
+    --ink:#0B0B0F; --ink2:#131319; --ink3:#1C1C25;
+    --gold:#C9A54A; --gold-hi:#E9CF8B; --gold-dim:#8F7430;
+    --text:#F3EFE4; --mut:#A49F92; --line:rgba(201,165,74,.3);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--ink);color:var(--text);line-height:1.68;}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--text);}
+  .logo-mark{width:40px;height:40px;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gold-hi);font-size:13px;letter-spacing:1px;background:radial-gradient(circle at 30% 25%,rgba(201,165,74,.25),transparent);}
+  .logo b{font-size:13.5px;letter-spacing:.14em;}
+  .logo small{display:block;font-size:9.5px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;}
+  .nav-links{display:flex;gap:22px;}
+  .nav-links a{color:var(--mut);text-decoration:none;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;}
+  .nav-links a:hover{color:var(--gold-hi);}
+  @media(max-width:820px){.nav-links{display:none;}}
+
+  .hero{position:relative;padding:96px 0 78px;background:
+    radial-gradient(900px 420px at 85% -10%,rgba(201,165,74,.12),transparent),
+    radial-gradient(700px 520px at -10% 115%,rgba(28,28,37,.95),transparent),var(--ink);}
+  .kick{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;margin-bottom:24px;background:rgba(201,165,74,.07);}
+  h1{font-size:clamp(32px,5.2vw,54px);line-height:1.1;font-weight:700;max-width:820px;}
+  h1 em{font-style:normal;color:var(--gold-hi);}
+  .titles{margin:16px 0 8px;color:var(--gold);font-size:14px;letter-spacing:.18em;text-transform:uppercase;}
+  .lede{max-width:680px;color:var(--mut);font-size:17px;margin:16px 0 32px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:15px 30px;letter-spacing:.03em;}
+  .btn-gold{background:linear-gradient(160deg,var(--gold-hi),var(--gold) 55%,var(--gold-dim));color:#15110A;box-shadow:0 6px 22px rgba(201,165,74,.3),inset 0 1px 0 rgba(255,255,255,.5);}
+  .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03);}
+  .hero-strip{margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .strip-cell{background:var(--ink2);padding:18px 14px;text-align:center;}
+  .strip-cell b{display:block;color:var(--gold-hi);font-size:17px;margin-bottom:3px;}
+  .strip-cell span{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;}
+  @media(max-width:720px){.hero-strip{grid-template-columns:repeat(2,1fr);}}
+
+  section{padding:76px 0;}
+  .sec-kick{color:var(--gold);font-size:11px;letter-spacing:.32em;text-transform:uppercase;margin-bottom:10px;}
+  h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:14px;}
+  .sec-sub{color:var(--mut);max-width:660px;margin-bottom:40px;}
+
+  .case{background:linear-gradient(170deg,var(--ink3),var(--ink2));border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--gold);padding:26px;margin-bottom:16px;}
+  .case .cite{color:var(--gold-hi);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;display:block;}
+  .case h3{font-size:18px;margin-bottom:8px;}
+  .case p{font-size:14px;color:var(--mut);}
+  .locus{display:inline-block;background:var(--gold);color:#15110A;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;margin-left:8px;vertical-align:middle;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
+  .mini{background:var(--ink2);border:1px solid rgba(255,255,255,.06);padding:20px;}
+  .mini b{display:block;color:var(--gold-hi);font-size:14.5px;margin-bottom:6px;}
+  .mini p{font-size:13px;color:var(--mut);}
+
+  .pub{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.07);}
+  .pub .mark{min-width:42px;height:42px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:18px;background:rgba(201,165,74,.08);}
+  .pub b{display:block;font-size:15.5px;}
+  .pub span{font-size:13px;color:var(--mut);}
+
+  .book{background:linear-gradient(135deg,var(--ink2),var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .book-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center;}
+  @media(max-width:820px){.book-grid{grid-template-columns:1fr;}}
+  .book-cover{aspect-ratio:2/3;max-width:300px;margin:0 auto;background:linear-gradient(160deg,#1E1B10,#0F0D08 60%);border:1px solid var(--gold);box-shadow:14px 14px 0 rgba(201,165,74,.12),0 24px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;justify-content:space-between;padding:28px 22px;position:relative;}
+  .book-cover::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:1px;background:rgba(201,165,74,.4);}
+  .bc-kick{color:var(--gold);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;}
+  .bc-title{font-size:21px;line-height:1.3;color:var(--gold-hi);}
+  .bc-auth{color:var(--mut);font-size:12px;letter-spacing:.12em;text-transform:uppercase;}
+  .forth{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;margin-bottom:18px;background:rgba(201,165,74,.07);}
+
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;}
+  .svc div{border-left:2px solid var(--gold);padding:5px 0 5px 18px;}
+  .svc b{display:block;font-size:15px;margin-bottom:5px;color:var(--gold-hi);}
+  .svc p{font-size:13.5px;color:var(--mut);}
+
+  .contact{background:var(--ink2);border-top:1px solid var(--line);}
+  .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;}
+  @media(max-width:760px){.c-grid{grid-template-columns:1fr;}}
+  .c-item{margin-bottom:20px;}
+  .c-item b{display:block;color:var(--gold-hi);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:4px;}
+  .c-item span,.c-item a{color:var(--text);font-size:15.5px;text-decoration:none;}
+  .wa-box{border:1px solid var(--line);padding:30px;background:rgba(201,165,74,.05);text-align:center;}
+  .wa-box h3{font-size:19px;margin-bottom:9px;}
+  .wa-box p{color:var(--mut);font-size:14px;margin-bottom:20px;}
+
+  footer{padding:32px 0 44px;border-top:1px solid rgba(255,255,255,.08);}
+  .f-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
+  .f-in small{color:var(--mut);font-size:12px;}
+  .disclaim{margin-top:16px;padding:13px 16px;border:1px dashed var(--line);font-size:11.5px;color:var(--mut);}
+  .disclaim b{color:var(--gold-hi);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">
+      <span class="logo-mark">TO</span>
+      <span><b>TOCHUKWU J. ONYIUKE, SAN</b><small>MCIArb (UK) · Notary Public</small></span>
+    </a>
+    <div class="nav-links sans">
+      <a href="#authorities">Authorities</a>
+      <a href="#scholarship">Scholarship</a>
+      <a href="#book">The Book</a>
+      <a href="#service">Service</a>
+      <a href="#contact">Chambers</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kick sans">Senior Advocate of Nigeria · Conferred 2023</span>
+    <h1>Advocate. Arbitrator. <em>Authority in the law of cyberspace.</em></h1>
+    <p class="titles sans">SAN · MCIArb (UK) · Notary Public · Head of Dispute Resolution, Accendolaw Partners LP</p>
+    <p class="lede sans">Over two decades of commercial litigation and appellate advocacy before Nigeria's highest courts — and a scholarly voice shaping how law meets technology, data and decentralised finance.</p>
+    <div class="cta-row sans">
+      <a class="btn btn-gold" href="#book">📖 The Forthcoming Book</a>
+      <a class="btn btn-ghost" href="#contact">Brief the Silk's Chambers</a>
+    </div>
+    <div class="hero-strip sans">
+      <div class="strip-cell"><b>20+</b><span>Years at the Bar</span></div>
+      <div class="strip-cell"><b>2</b><span>Supreme Court Loci Classici</span></div>
+      <div class="strip-cell"><b>12+</b><span>International Publications</span></div>
+      <div class="strip-cell"><b>2023</b><span>Rank of Silk Conferred</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="authorities">
+  <div class="wrap">
+    <p class="sec-kick sans">Selected Authorities</p>
+    <h2>Cases That Shaped the Law</h2>
+    <p class="sec-sub sans">Matters conducted before the Supreme Court of Nigeria and landmark proceedings across the Federal courts.</p>
+
+    <div class="case">
+      <span class="cite sans">Supreme Court of Nigeria · (2021) 12 NWLR (Part 1789)<span class="locus">Locus Classicus</span></span>
+      <h3>Pillars Nigeria Limited v. Desbordes &amp; Anor.</h3>
+      <p class="sans">A leading authority cited across Nigerian courts — among the defining decisions in its field.</p>
+    </div>
+    <div class="case">
+      <span class="cite sans">Supreme Court of Nigeria · (2022) JELR 109884 (SC)<span class="locus">Locus Classicus</span></span>
+      <h3>Chibueze Ojeh v. Federal Republic of Nigeria</h3>
+      <p class="sans">A landmark criminal appeal decided at the apex court, now standard reference material.</p>
+    </div>
+
+    <div class="grid2 sans" style="margin-top:22px;">
+      <div class="mini"><b>Nigeria's First Banking Class Action</b><p>Initiated the first-ever class action against all Nigerian commercial banks and the Central Bank of Nigeria over unauthorised ATM withdrawals.</p></div>
+      <div class="mini"><b>₦1.6 Billion Recovered for the Federation</b><p>Counsel in escheatment proceedings recovering ₦1.6bn for the Federal Government of Nigeria; separately led tracing and recovery of ₦1bn in corruption proceeds.</p></div>
+      <div class="mini"><b>$30 Million Defence Brief</b><p>Led the defence team in a high-profile money-laundering matter exceeding $30,000,000 before the Federal High Court, Lagos.</p></div>
+      <div class="mini"><b>Receivership &amp; Insolvency</b><p>Counsel to a Receiver/Manager appointed over an unpaid facility exceeding ₦1bn — core practice in business recovery and restructuring.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="scholarship" style="background:var(--ink2);border-top:1px solid var(--line);">
+  <div class="wrap">
+    <p class="sec-kick sans">Scholarship</p>
+    <h2>Published Internationally</h2>
+    <p class="sec-sub sans">A sustained body of work on technology law, cyberspace and commercial practice — in journals of record in the United Kingdom and beyond.</p>
+    <div class="pub"><span class="mark">📜</span><span class="sans"><b>Computer and Telecommunications Law Review — C.T.L.R. (Thomson Reuters / Sweet &amp; Maxwell, UK)</b><span>A continuing series of articles (2021–date) spanning electronic transactions, trademark law in cyberspace, electoral law in cyberspace and cybercrime liability.</span></span></div>
+    <div class="pub"><span class="mark">🎓</span><span class="sans"><b>Amicus Curiae — University of London (SOAS)</b><span>Contributions to one of the UK's respected journals of law reform and practice.</span></span></div>
+    <div class="pub"><span class="mark">⚓</span><span class="sans"><b>Journal of International Maritime Law (UK) · IntechOpen (London) · BRIPAN Law Review · Nigerian Bar Journal</b><span>Further published work across maritime law, correctional reform and insolvency practice.</span></span></div>
+    <div class="pub" style="border-bottom:none;"><span class="mark">🖋️</span><span class="sans"><b>"Digital Sovereignty: Can the Law Arrest a Borderless Asset?" — NBA Lagos Branch</b><span>The Editorial Board Chairman's view on regulating virtual assets through access points, TIN/NIN-linked VASP accountability and borderless frameworks.</span></span></div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <div class="book-cover">
+        <span class="bc-kick sans">A Forthcoming Textbook</span>
+        <span class="bc-title">The Law of Cyberspace and Decentralised Finance</span>
+        <span class="bc-auth sans">Tochukwu J. Onyiuke, SAN</span>
+      </div>
+    </div>
+    <div>
+      <span class="forth sans">Forthcoming · Reserve Your Copy</span>
+      <h2>The Book the Profession Has Been Waiting For</h2>
+      <p class="sec-sub sans" style="margin-bottom:26px;">Where does law end and the blockchain begin? Drawing on years of C.T.L.R. scholarship and frontline practice in technology disputes, this textbook maps the legal architecture of cyberspace and decentralised finance — for practitioners, regulators and the academy.</p>
+      <div class="cta-row sans">
+        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day.%20I%20would%20like%20to%20reserve%20a%20copy%20of%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance%20by%20Tochukwu%20J.%20Onyiuke%2C%20SAN.">📖 Reserve a Copy on WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:tochukwu@accendo-law.com?subject=Pre-order%20interest%3A%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance">Register Interest by Email</a>
+      </div>
+      <p class="sans" style="margin-top:18px;font-size:12.5px;color:var(--mut);">Launch details, reviews and ordering will be announced on this portal.</p>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <p class="sec-kick sans">Arbitration &amp; Service to the Profession</p>
+    <h2>Beyond the Courtroom</h2>
+    <div class="svc sans" style="margin-top:30px;">
+      <div><b>Arbitration — MCIArb (UK)</b><p>Member of the Chartered Institute of Arbitrators; available for appointment in commercial arbitration.</p></div>
+      <div><b>Editorial Board Chairman</b><p>Chairman, Editorial Board, NBA Lagos Branch (2025–date); member, 2020–2024.</p></div>
+      <div><b>Notary Public</b><p>Appointed Notary Public of the Federal Republic of Nigeria, 2017.</p></div>
+      <div><b>Formation</b><p>LL.B. (Jos) · B.L. (Abuja) · M.Sc. Financial Management, Middlesex University, London. Early practice at Punuka Attorneys &amp; Solicitors under Dr. Anthony Idigbe, SAN.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="sec-kick sans">Chambers</p>
+    <h2>Brief the Silk</h2>
+    <div class="c-grid" style="margin-top:30px;">
+      <div class="sans">
+        <div class="c-item"><b>Chambers</b><span>Accendolaw Partners LP<br>9B Christ Avenue, Lekki Phase 1, Lagos</span></div>
+        <div class="c-item"><b>Email</b><a href="mailto:tochukwu@accendo-law.com">tochukwu@accendo-law.com</a></div>
+        <div class="c-item"><b>Practice</b><span>Dispute Resolution · Appellate Advocacy · Technology, AI and Data Protection · Insolvency · Arbitration</span></div>
+      </div>
+      <div class="wa-box sans">
+        <h3>Instructions &amp; Appointments</h3>
+        <p>For briefs, arbitration appointments, speaking engagements and scholarly enquiries.</p>
+        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day.%20I%20wish%20to%20reach%20the%20chambers%20of%20Tochukwu%20J.%20Onyiuke%2C%20SAN%20regarding%20a%20matter.">💬 Contact the Chambers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in sans">
+      <small>© 2026 Tochukwu J. Onyiuke, SAN · Lagos, Nigeria</small>
+      <small>Advocate · Arbitrator · Author</small>
+    </div>
+    <div class="disclaim sans"><b>COMPLIMENTARY EXECUTIVE PREVIEW</b> — This concept portal was prepared for the Learned Silk by Olamide (Legal Web Developer) to demonstrate a proposed personal scholarly portal (tochukwuonyiukesan.com). All content is drawn from published sources and remains subject to the Learned Silk's review, correction and approval. Not yet an official website.</div>
+  </div>
+</footer>
+
+</body>
+</html>
