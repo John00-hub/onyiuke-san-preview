@@ -4,100 +4,141 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Tochukwu J. Onyiuke, SAN — Advocate · Arbitrator · Author | Official Portal</title>
-<meta name="description" content="Official portal of Tochukwu J. Onyiuke, SAN, MCIArb(UK) — Senior Advocate of Nigeria, commercial litigator, arbitrator and author of The Law of Cyberspace and Decentralised Finance.">
+<title>Tochukwu J. Onyiuke, SAN | Advocate, Arbitrator, Author</title>
+<meta name="description" content="Official portal of Tochukwu J. Onyiuke, SAN, MCIArb(UK), Notary Public. Head of Dispute Resolution, Accendolaw Partners LP, Lagos. The only African lawyer to publish consistently in the Computer and Telecommunication Law Review (Thomson Reuters, Sweet and Maxwell, UK).">
+<meta property="og:title" content="Tochukwu J. Onyiuke, SAN | Advocate, Arbitrator, Author">
+<meta property="og:description" content="Senior Advocate of Nigeria. Head of Dispute Resolution at Accendolaw Partners LP. Eleven peer reviewed articles in the C.T.L.R. (Thomson Reuters, Sweet and Maxwell, UK).">
+<meta property="og:type" content="profile">
 <style>
   :root{
-    --ink:#0B0B0F; --ink2:#131319; --ink3:#1C1C25;
-    --gold:#C9A54A; --gold-hi:#E9CF8B; --gold-dim:#8F7430;
-    --text:#F3EFE4; --mut:#A49F92; --line:rgba(201,165,74,.3);
+    --ink:#0A0A0E; --ink2:#111117; --ink3:#191922; --ink4:#20202b;
+    --gold:#C9A54A; --gold-hi:#EBD494; --gold-dim:#8A6F2C;
+    --text:#F2EEE3; --mut:#9E9A8D; --mut2:#75726a;
+    --line:rgba(201,165,74,.28); --hair:rgba(255,255,255,.07);
   }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:Georgia,'Times New Roman',serif;background:var(--ink);color:var(--text);line-height:1.68;}
-  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--ink);color:var(--text);line-height:1.7;overflow-x:hidden}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  a{color:inherit}
+  ::selection{background:var(--gold);color:#15110A}
 
-  nav{position:sticky;top:0;z-index:50;background:rgba(11,11,15,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);}
-  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;}
-  .logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--text);}
-  .logo-mark{width:40px;height:40px;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gold-hi);font-size:13px;letter-spacing:1px;background:radial-gradient(circle at 30% 25%,rgba(201,165,74,.25),transparent);}
-  .logo b{font-size:13.5px;letter-spacing:.14em;}
-  .logo small{display:block;font-size:9.5px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;}
-  .nav-links{display:flex;gap:22px;}
-  .nav-links a{color:var(--mut);text-decoration:none;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;}
-  .nav-links a:hover{color:var(--gold-hi);}
-  @media(max-width:820px){.nav-links{display:none;}}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:90;background:rgba(10,10,14,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .logo-mark{width:42px;height:42px;border:1.5px solid var(--gold);display:grid;place-items:center;font-weight:700;color:var(--gold-hi);font-size:13px;letter-spacing:1px;background:radial-gradient(circle at 30% 25%,rgba(201,165,74,.28),transparent)}
+  .logo b{font-size:13px;letter-spacing:.13em;display:block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .logo small{display:block;font-size:9px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .nav-links{display:flex;gap:20px}
+  .nav-links a{color:var(--mut);text-decoration:none;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;transition:color .2s}
+  .nav-links a:hover{color:var(--gold-hi)}
+  .burger{display:none;background:none;border:1px solid var(--line);color:var(--gold-hi);padding:9px 12px;font-size:16px;cursor:pointer}
+  .mob{display:none;border-top:1px solid var(--hair);background:var(--ink2)}
+  .mob a{display:block;padding:14px 22px;color:var(--text);text-decoration:none;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--hair);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .mob.open{display:block}
+  @media(max-width:880px){.nav-links{display:none}.burger{display:block}}
 
-  .hero{position:relative;padding:96px 0 78px;background:
-    radial-gradient(900px 420px at 85% -10%,rgba(201,165,74,.12),transparent),
-    radial-gradient(700px 520px at -10% 115%,rgba(28,28,37,.95),transparent),var(--ink);}
-  .kick{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;padding:7px 16px;margin-bottom:24px;background:rgba(201,165,74,.07);}
-  h1{font-size:clamp(32px,5.2vw,54px);line-height:1.1;font-weight:700;max-width:820px;}
-  h1 em{font-style:normal;color:var(--gold-hi);}
-  .titles{margin:16px 0 8px;color:var(--gold);font-size:14px;letter-spacing:.18em;text-transform:uppercase;}
-  .lede{max-width:680px;color:var(--mut);font-size:17px;margin:16px 0 32px;}
-  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:15px 30px;letter-spacing:.03em;}
-  .btn-gold{background:linear-gradient(160deg,var(--gold-hi),var(--gold) 55%,var(--gold-dim));color:#15110A;box-shadow:0 6px 22px rgba(201,165,74,.3),inset 0 1px 0 rgba(255,255,255,.5);}
-  .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03);}
-  .hero-strip{margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
-  .strip-cell{background:var(--ink2);padding:18px 14px;text-align:center;}
-  .strip-cell b{display:block;color:var(--gold-hi);font-size:17px;margin-bottom:3px;}
-  .strip-cell span{font-size:10.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;}
-  @media(max-width:720px){.hero-strip{grid-template-columns:repeat(2,1fr);}}
+  /* HERO */
+  .hero{position:relative;padding:100px 0 70px;background:radial-gradient(900px 460px at 84% -12%,rgba(201,165,74,.14),transparent),radial-gradient(700px 520px at -8% 112%,rgba(32,32,43,.9),transparent),var(--ink)}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+  .kick{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10px;letter-spacing:.3em;text-transform:uppercase;padding:8px 16px;margin-bottom:26px;background:rgba(201,165,74,.07)}
+  h1{font-size:clamp(34px,5.6vw,60px);line-height:1.05;font-weight:700;letter-spacing:-.01em;max-width:860px}
+  h1 em{font-style:normal;color:var(--gold-hi);display:block}
+  .titles{margin:20px 0 10px;color:var(--gold);font-size:12.5px;letter-spacing:.2em;text-transform:uppercase}
+  .lede{max-width:700px;color:var(--mut);font-size:17px;margin:18px 0 34px;line-height:1.75}
+  .lede strong{color:var(--text);font-weight:400}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:16px 30px;letter-spacing:.03em;transition:transform .15s,box-shadow .2s;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-gold{background:linear-gradient(160deg,var(--gold-hi),var(--gold) 55%,var(--gold-dim));color:#15110A;box-shadow:0 8px 26px rgba(201,165,74,.28),inset 0 1px 0 rgba(255,255,255,.5)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+  .btn-sm{padding:11px 20px;font-size:12.5px}
 
-  section{padding:76px 0;}
-  .sec-kick{color:var(--gold);font-size:11px;letter-spacing:.32em;text-transform:uppercase;margin-bottom:10px;}
-  h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:14px;}
-  .sec-sub{color:var(--mut);max-width:660px;margin-bottom:40px;}
+  .hero-strip{margin-top:58px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .strip-cell{background:var(--ink2);padding:22px 14px;text-align:center}
+  .strip-cell b{display:block;color:var(--gold-hi);font-size:24px;margin-bottom:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .strip-cell span{font-size:10px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.4;display:block}
+  @media(max-width:760px){.hero-strip{grid-template-columns:repeat(2,1fr)}.hero{padding:70px 0 56px}}
 
-  .case{background:linear-gradient(170deg,var(--ink3),var(--ink2));border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--gold);padding:26px;margin-bottom:16px;}
-  .case .cite{color:var(--gold-hi);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;display:block;}
-  .case h3{font-size:18px;margin-bottom:8px;}
-  .case p{font-size:14px;color:var(--mut);}
-  .locus{display:inline-block;background:var(--gold);color:#15110A;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:3px 10px;margin-left:8px;vertical-align:middle;}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  @media(max-width:760px){.grid2{grid-template-columns:1fr;}}
-  .mini{background:var(--ink2);border:1px solid rgba(255,255,255,.06);padding:20px;}
-  .mini b{display:block;color:var(--gold-hi);font-size:14.5px;margin-bottom:6px;}
-  .mini p{font-size:13px;color:var(--mut);}
+  /* SECTIONS */
+  section{padding:82px 0;position:relative}
+  .alt{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-kick{color:var(--gold);font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;margin-bottom:12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  h2{font-size:clamp(25px,3.6vw,38px);line-height:1.15;margin-bottom:14px;font-weight:700}
+  .sec-sub{color:var(--mut);max-width:690px;margin-bottom:44px;font-size:15.5px;line-height:1.75}
 
-  .pub{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.07);}
-  .pub .mark{min-width:42px;height:42px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:18px;background:rgba(201,165,74,.08);}
-  .pub b{display:block;font-size:15.5px;}
-  .pub span{font-size:13px;color:var(--mut);}
+  /* SEARCH / ARCHIVE */
+  .searchbar{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}
+  .searchbar input{flex:1;min-width:220px;background:var(--ink3);border:1px solid var(--line);color:var(--text);padding:16px 18px;font-size:15px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;outline:none}
+  .searchbar input:focus{border-color:var(--gold)}
+  .searchbar input::placeholder{color:var(--mut2)}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+  .chip{background:transparent;border:1px solid var(--hair);color:var(--mut);padding:9px 16px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;transition:all .18s}
+  .chip:hover{border-color:var(--line);color:var(--text)}
+  .chip.on{background:var(--gold);border-color:var(--gold);color:#15110A;font-weight:700}
+  .count{color:var(--mut2);font-size:12px;margin-bottom:20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .rec{background:linear-gradient(170deg,var(--ink3),var(--ink2));border:1px solid var(--hair);border-left:3px solid var(--gold);padding:24px 26px;margin-bottom:12px;transition:border-color .2s,transform .15s}
+  .rec:hover{border-left-color:var(--gold-hi);transform:translateX(2px)}
+  .rec .tag{color:var(--gold-hi);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:9px;display:block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .rec h3{font-size:17.5px;line-height:1.35;margin-bottom:9px;font-weight:700}
+  .rec p{font-size:14px;color:var(--mut);line-height:1.65;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .locus{display:inline-block;background:var(--gold);color:#15110A;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;margin-left:8px;vertical-align:middle;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .empty{color:var(--mut2);padding:34px 0;text-align:center;font-size:14px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
 
-  .book{background:linear-gradient(135deg,var(--ink2),var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .book-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center;}
-  @media(max-width:820px){.book-grid{grid-template-columns:1fr;}}
-  .book-cover{aspect-ratio:2/3;max-width:300px;margin:0 auto;background:linear-gradient(160deg,#1E1B10,#0F0D08 60%);border:1px solid var(--gold);box-shadow:14px 14px 0 rgba(201,165,74,.12),0 24px 60px rgba(0,0,0,.6);display:flex;flex-direction:column;justify-content:space-between;padding:28px 22px;position:relative;}
-  .book-cover::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:1px;background:rgba(201,165,74,.4);}
-  .bc-kick{color:var(--gold);font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;}
-  .bc-title{font-size:21px;line-height:1.3;color:var(--gold-hi);}
-  .bc-auth{color:var(--mut);font-size:12px;letter-spacing:.12em;text-transform:uppercase;}
-  .forth{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;margin-bottom:18px;background:rgba(201,165,74,.07);}
+  /* GRID CARDS */
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  @media(max-width:760px){.g2{grid-template-columns:1fr}}
+  .mini{background:var(--ink2);border:1px solid var(--hair);padding:22px}
+  .mini b{display:block;color:var(--gold-hi);font-size:15px;margin-bottom:7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .mini p{font-size:13.2px;color:var(--mut);line-height:1.6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
 
-  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;}
-  .svc div{border-left:2px solid var(--gold);padding:5px 0 5px 18px;}
-  .svc b{display:block;font-size:15px;margin-bottom:5px;color:var(--gold-hi);}
-  .svc p{font-size:13.5px;color:var(--mut);}
+  /* PUB LIST */
+  .pub{display:grid;grid-template-columns:52px 1fr;gap:18px;align-items:start;padding:20px 0;border-bottom:1px solid var(--hair)}
+  .pub:last-child{border-bottom:none}
+  .pub .mark{min-width:44px;height:44px;border:1px solid var(--line);display:grid;place-items:center;font-size:12px;letter-spacing:.05em;background:rgba(201,165,74,.08);color:var(--gold-hi);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-weight:700}
+  .pub b{display:block;font-size:15.5px;line-height:1.45;margin-bottom:5px}
+  .pub span{font-size:13px;color:var(--mut);line-height:1.6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;display:block}
 
-  .contact{background:var(--ink2);border-top:1px solid var(--line);}
-  .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;}
-  @media(max-width:760px){.c-grid{grid-template-columns:1fr;}}
-  .c-item{margin-bottom:20px;}
-  .c-item b{display:block;color:var(--gold-hi);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:4px;}
-  .c-item span,.c-item a{color:var(--text);font-size:15.5px;text-decoration:none;}
-  .wa-box{border:1px solid var(--line);padding:30px;background:rgba(201,165,74,.05);text-align:center;}
-  .wa-box h3{font-size:19px;margin-bottom:9px;}
-  .wa-box p{color:var(--mut);font-size:14px;margin-bottom:20px;}
+  /* TIMELINE */
+  .tl{position:relative;margin-top:36px;padding-left:34px}
+  .tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(201,165,74,.1))}
+  .tl-item{position:relative;margin-bottom:30px}
+  .tl-item::before{content:"";position:absolute;left:-30px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--ink),0 0 0 4px rgba(201,165,74,.35)}
+  .tl-item .yr{color:var(--gold-hi);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;margin-bottom:5px;display:block}
+  .tl-item b{display:block;font-size:16px;margin-bottom:5px}
+  .tl-item p{font-size:13.5px;color:var(--mut);line-height:1.65;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
 
-  footer{padding:32px 0 44px;border-top:1px solid rgba(255,255,255,.08);}
-  .f-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
-  .f-in small{color:var(--mut);font-size:12px;}
-  .disclaim{margin-top:16px;padding:13px 16px;border:1px dashed var(--line);font-size:11.5px;color:var(--mut);}
-  .disclaim b{color:var(--gold-hi);}
+  /* BOOK */
+  .book{padding:82px 0;background:linear-gradient(135deg,var(--ink2),var(--ink));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .book-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:52px;align-items:center}
+  @media(max-width:860px){.book-grid{grid-template-columns:1fr;gap:34px}}
+  .book-cover{aspect-ratio:2/3;max-width:300px;margin:0 auto;background:linear-gradient(160deg,#1E1B10,#0F0D08 60%);border:1px solid var(--gold);box-shadow:16px 16px 0 rgba(201,165,74,.1),0 28px 64px rgba(0,0,0,.65);display:flex;flex-direction:column;justify-content:space-between;padding:30px 24px;position:relative}
+  .book-cover::before{content:"";position:absolute;left:11px;top:0;bottom:0;width:1px;background:rgba(201,165,74,.4)}
+  .bc-kick{color:var(--gold);font-size:9px;letter-spacing:.3em;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .bc-title{font-size:21px;line-height:1.32;color:var(--gold-hi);margin:14px 0}
+  .bc-auth{color:var(--mut);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .forth{display:inline-block;border:1px solid var(--line);color:var(--gold-hi);font-size:10px;letter-spacing:.24em;text-transform:uppercase;padding:7px 15px;margin-bottom:20px;background:rgba(201,165,74,.07);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+
+  /* CONTACT */
+  .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px}
+  @media(max-width:800px){.c-grid{grid-template-columns:1fr;gap:28px}}
+  .c-item{margin-bottom:22px}
+  .c-item b{display:block;color:var(--gold-hi);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .c-item span,.c-item a{font-size:15.5px;text-decoration:none;line-height:1.6}
+  .c-item a:hover{color:var(--gold-hi)}
+  .wa-box{border:1px solid var(--line);padding:32px 26px;background:rgba(201,165,74,.05);text-align:center}
+  .wa-box h3{font-size:19px;margin-bottom:10px}
+  .wa-box p{color:var(--mut);font-size:13.5px;margin-bottom:22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.6}
+
+  footer{padding:36px 0 48px;border-top:1px solid var(--hair)}
+  .f-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+  .f-in small{color:var(--mut);font-size:12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .disclaim{padding:15px 18px;border:1px dashed var(--line);font-size:11.5px;color:var(--mut);line-height:1.65;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
+  .disclaim b{color:var(--gold-hi);letter-spacing:.08em}
+  .backtop{display:inline-block;margin-top:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif}
 </style>
 </head>
 <body>
@@ -108,70 +149,135 @@
       <span class="logo-mark">TO</span>
       <span><b>TOCHUKWU J. ONYIUKE, SAN</b><small>MCIArb (UK) · Notary Public</small></span>
     </a>
-    <div class="nav-links sans">
-      <a href="#authorities">Authorities</a>
+    <div class="nav-links">
+      <a href="#archive">The Record</a>
+      <a href="#practice">Practice</a>
       <a href="#scholarship">Scholarship</a>
+      <a href="#career">Career</a>
       <a href="#book">The Book</a>
-      <a href="#service">Service</a>
       <a href="#contact">Chambers</a>
     </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+  <div class="mob" id="mob">
+    <a href="#archive">The Record</a>
+    <a href="#practice">Practice</a>
+    <a href="#scholarship">Scholarship</a>
+    <a href="#career">Career</a>
+    <a href="#book">The Book</a>
+    <a href="#contact">Chambers</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="kick sans">Senior Advocate of Nigeria · Conferred 2023</span>
-    <h1>Advocate. Arbitrator. <em>Authority in the law of cyberspace.</em></h1>
-    <p class="titles sans">SAN · MCIArb (UK) · Notary Public · Head of Dispute Resolution, Accendolaw Partners LP</p>
-    <p class="lede sans">Over two decades of commercial litigation and appellate advocacy before Nigeria's highest courts — and a scholarly voice shaping how law meets technology, data and decentralised finance.</p>
-    <div class="cta-row sans">
-      <a class="btn btn-gold" href="#book">📖 The Forthcoming Book</a>
-      <a class="btn btn-ghost" href="#contact">Brief the Silk's Chambers</a>
+    <span class="kick">Senior Advocate of Nigeria · Conferred 2023</span>
+    <h1>Advocate. Arbitrator.<em>Authority in the law of cyberspace.</em></h1>
+    <p class="titles">SAN · MCIArb (UK) · Notary Public · Head of Dispute Resolution, Accendolaw Partners LP</p>
+    <p class="lede">Two decades of commercial litigation and appellate advocacy before the Supreme Court of Nigeria, alongside a scholarly record without equal on the continent: <strong>the only African lawyer to have published consistently in the Computer and Telecommunication Law Review</strong>, Thomson Reuters and Sweet and Maxwell, United Kingdom.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#archive">&#128218; Open the Record</a>
+      <a class="btn btn-ghost" href="#contact">Brief the Silk</a>
     </div>
-    <div class="hero-strip sans">
-      <div class="strip-cell"><b>20+</b><span>Years at the Bar</span></div>
+    <div class="hero-strip">
+      <div class="strip-cell"><b>2001</b><span>Called to the Bar</span></div>
+      <div class="strip-cell"><b>11</b><span>C.T.L.R. Articles</span></div>
       <div class="strip-cell"><b>2</b><span>Supreme Court Loci Classici</span></div>
-      <div class="strip-cell"><b>12+</b><span>International Publications</span></div>
-      <div class="strip-cell"><b>2023</b><span>Rank of Silk Conferred</span></div>
+      <div class="strip-cell"><b>2023</b><span>Rank of Silk</span></div>
     </div>
   </div>
 </header>
 
-<section id="authorities">
+<section id="archive">
   <div class="wrap">
-    <p class="sec-kick sans">Selected Authorities</p>
-    <h2>Cases That Shaped the Law</h2>
-    <p class="sec-sub sans">Matters conducted before the Supreme Court of Nigeria and landmark proceedings across the Federal courts.</p>
+    <p class="sec-kick">The Complete Record</p>
+    <h2>A searchable archive of a working life at the law</h2>
+    <p class="sec-sub">Every reported authority, every published article, every appointment and every office. Type a word below, or choose a category, and the record filters instantly. This is the guide to the detail.</p>
 
-    <div class="case">
-      <span class="cite sans">Supreme Court of Nigeria · (2021) 12 NWLR (Part 1789)<span class="locus">Locus Classicus</span></span>
-      <h3>Pillars Nigeria Limited v. Desbordes &amp; Anor.</h3>
-      <p class="sans">A leading authority cited across Nigerian courts — among the defining decisions in its field.</p>
+    <div class="searchbar">
+      <input id="q" type="search" placeholder="Search cyberspace, arbitration, deep fake, NWLR, Insolvency..." aria-label="Search the record">
+      <button class="btn btn-ghost btn-sm" id="reset" type="button">Clear</button>
     </div>
-    <div class="case">
-      <span class="cite sans">Supreme Court of Nigeria · (2022) JELR 109884 (SC)<span class="locus">Locus Classicus</span></span>
-      <h3>Chibueze Ojeh v. Federal Republic of Nigeria</h3>
-      <p class="sans">A landmark criminal appeal decided at the apex court, now standard reference material.</p>
+    <div class="chips" id="chips">
+      <button class="chip on" data-cat="all">All</button>
+      <button class="chip" data-cat="case">Reported Authorities</button>
+      <button class="chip" data-cat="article">Publications</button>
+      <button class="chip" data-cat="matter">Notable Matters</button>
+      <button class="chip" data-cat="office">Offices and Honours</button>
     </div>
+    <p class="count" id="count"></p>
+    <div id="results"></div>
+  </div>
+</section>
 
-    <div class="grid2 sans" style="margin-top:22px;">
-      <div class="mini"><b>Nigeria's First Banking Class Action</b><p>Initiated the first-ever class action against all Nigerian commercial banks and the Central Bank of Nigeria over unauthorised ATM withdrawals.</p></div>
-      <div class="mini"><b>₦1.6 Billion Recovered for the Federation</b><p>Counsel in escheatment proceedings recovering ₦1.6bn for the Federal Government of Nigeria; separately led tracing and recovery of ₦1bn in corruption proceeds.</p></div>
-      <div class="mini"><b>$30 Million Defence Brief</b><p>Led the defence team in a high-profile money-laundering matter exceeding $30,000,000 before the Federal High Court, Lagos.</p></div>
-      <div class="mini"><b>Receivership &amp; Insolvency</b><p>Counsel to a Receiver/Manager appointed over an unpaid facility exceeding ₦1bn — core practice in business recovery and restructuring.</p></div>
+<section class="alt" id="practice">
+  <div class="wrap">
+    <p class="sec-kick">Area of Practice</p>
+    <h2>Where the Silk is briefed</h2>
+    <p class="sec-sub">Nine fields of practice, drawn from the chambers record, spanning the courtroom, the arbitral tribunal and the regulatory frontier.</p>
+    <div class="g3">
+      <div class="mini"><b>Dispute Resolution and Appellate Advocacy</b><p>Supreme Court, Court of Appeal and Federal High Court. A practice built on appellate work at the apex of the Nigerian legal system.</p></div>
+      <div class="mini"><b>Arbitration</b><p>Member of the Chartered Institute of Arbitrators, United Kingdom. Available for appointment as arbitrator in commercial disputes.</p></div>
+      <div class="mini"><b>AI Law and TMT</b><p>Artificial intelligence, technology, media and telecommunications law, the field in which his international scholarship is concentrated.</p></div>
+      <div class="mini"><b>Data Protection and Privacy</b><p>Nigerian data regulatory framework, the right to be forgotten and cross border data questions.</p></div>
+      <div class="mini"><b>Insolvency and Restructuring</b><p>Business recovery, corporate restructuring and receivership instructions, including facilities exceeding one billion naira.</p></div>
+      <div class="mini"><b>Intellectual Property</b><p>Trademarks, cybersquatting and IP litigation, including the application of trademark law in cyberspace.</p></div>
+      <div class="mini"><b>Capital Markets and Project Finance</b><p>Convertible notes, procurement of international debt finance and capital market operations.</p></div>
+      <div class="mini"><b>Labour and Employment</b><p>Employment disputes and advisory work for corporate clients.</p></div>
+      <div class="mini"><b>Maritime Law</b><p>Published in the Journal of International Maritime Law, United Kingdom, and instructed in maritime matters.</p></div>
     </div>
   </div>
 </section>
 
-<section id="scholarship" style="background:var(--ink2);border-top:1px solid var(--line);">
+<section id="scholarship">
   <div class="wrap">
-    <p class="sec-kick sans">Scholarship</p>
-    <h2>Published Internationally</h2>
-    <p class="sec-sub sans">A sustained body of work on technology law, cyberspace and commercial practice — in journals of record in the United Kingdom and beyond.</p>
-    <div class="pub"><span class="mark">📜</span><span class="sans"><b>Computer and Telecommunications Law Review — C.T.L.R. (Thomson Reuters / Sweet &amp; Maxwell, UK)</b><span>A continuing series of articles (2021–date) spanning electronic transactions, trademark law in cyberspace, electoral law in cyberspace and cybercrime liability.</span></span></div>
-    <div class="pub"><span class="mark">🎓</span><span class="sans"><b>Amicus Curiae — University of London (SOAS)</b><span>Contributions to one of the UK's respected journals of law reform and practice.</span></span></div>
-    <div class="pub"><span class="mark">⚓</span><span class="sans"><b>Journal of International Maritime Law (UK) · IntechOpen (London) · BRIPAN Law Review · Nigerian Bar Journal</b><span>Further published work across maritime law, correctional reform and insolvency practice.</span></span></div>
-    <div class="pub" style="border-bottom:none;"><span class="mark">🖋️</span><span class="sans"><b>"Digital Sovereignty: Can the Law Arrest a Borderless Asset?" — NBA Lagos Branch</b><span>The Editorial Board Chairman's view on regulating virtual assets through access points, TIN/NIN-linked VASP accountability and borderless frameworks.</span></span></div>
+    <p class="sec-kick">International Scholarship</p>
+    <h2>The only African lawyer publishing consistently in the C.T.L.R.</h2>
+    <p class="sec-sub">The Computer and Telecommunication Law Review is published by Thomson Reuters and Sweet and Maxwell in the United Kingdom. It places its contributors alongside the world's leading technology lawyers. Tochukwu J. Onyiuke, SAN has contributed eleven peer reviewed articles to the Review, a record unmatched by any other African lawyer.</p>
+
+    <div class="c-item" style="border-left:3px solid var(--gold);padding-left:20px;margin-bottom:36px">
+      <b style="color:var(--gold-hi)">Computer and Telecommunication Law Review, Thomson Reuters and Sweet and Maxwell (UK)</b>
+      <div>
+        <div class="pub"><span class="mark">30.1</span><span><b>Artificial Intelligence in Nigeria's Financial Sector: Lessons from the System Bug in Interswitch v. UBA Plc</b><span>2024, Volume 30, Issue 1</span></span></div>
+        <div class="pub"><span class="mark">30.2</span><span><b>Testing the Boundaries of Legal Liability in the Usage of Artificial Intelligence</b><span>2024, Volume 30, Issue 2</span></span></div>
+        <div class="pub"><span class="mark">31.1</span><span><b>Right to be Forgotten: Understanding the Nigerian Data Regulatory Framework</b><span>2025, Volume 31, Issue 1</span></span></div>
+        <div class="pub"><span class="mark">31.5</span><span><b>Controlling Realities: The Role of Law in Deep Fake Technology</b><span>2025, Volume 31, Issue 5</span></span></div>
+        <div class="pub"><span class="mark">31.7</span><span><b>Legal Protection and Frameworks of Algorithms in the Digital Age</b><span>2025, Volume 31, Issue 7</span></span></div>
+        <div class="pub"><span class="mark">6</span><span><b>Earlier contributions, 2021 to 2023</b><span>Six further articles covering electronic transactions, trademark law in cyberspace, electoral law in cyberspace and cybercrime liability</span></span></div>
+      </div>
+    </div>
+
+    <p class="sec-kick">Also Published In</p>
+    <div class="g2" style="margin-top:18px">
+      <div class="mini"><b>Amicus Curiae</b><p>University of London, School of Advanced Study. One of the United Kingdom's respected journals of law reform and practice.</p></div>
+      <div class="mini"><b>Journal of International Maritime Law</b><p>United Kingdom. Contributions on maritime and shipping law.</p></div>
+      <div class="mini"><b>IntechOpen</b><p>London. Perspective chapter on challenges in the Nigerian correctional facilities.</p></div>
+      <div class="mini"><b>BRIPAN Law Review and the Nigerian Bar Journal</b><p>Domestic peer reviewed publication on insolvency practice and the profession.</p></div>
+    </div>
+
+    <div style="margin-top:34px;border:1px solid var(--line);padding:26px;background:rgba(201,165,74,.05)">
+      <p class="sec-kick" style="margin-bottom:8px">Editorial Leadership</p>
+      <p class="sans" style="font-size:14.5px;color:var(--mut);line-height:1.7">Chairman, Editorial Board, Nigerian Bar Association, Lagos Branch, 2025 to date. Member of the same Editorial Board, 2020 to 2024. Member of the Organising Committee for the Lagos Bar Law Week in 2023 and 2024.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="career">
+  <div class="wrap">
+    <p class="sec-kick">The Career</p>
+    <h2>From Jos to the Inner Bar</h2>
+    <p class="sec-sub">A single unbroken line of practice, study and scholarship.</p>
+    <div class="tl">
+      <div class="tl-item"><span class="yr">1999</span><b>Bachelor of Laws, University of Jos</b><p>The foundation of a career that would turn toward the commercial and the technological.</p></div>
+      <div class="tl-item"><span class="yr">2001</span><b>Called to the Nigerian Bar, Abuja</b><p>Barrister at Law, Nigerian Law School.</p></div>
+      <div class="tl-item"><span class="yr">2005</span><b>M.Sc. Financial Management, Middlesex University Business School, London</b><p>Financial training that underpins the project finance, capital markets and insolvency practice.</p></div>
+      <div class="tl-item"><span class="yr">2007</span><b>Punuka Attorneys and Solicitors, Lagos</b><p>Early years under the distinguished leadership of Dr. Anthony Idigbe, SAN. Led the team behind Nigeria's first class action on electronic transactions, brought against all Nigerian commercial banks and the Central Bank of Nigeria over unauthorised ATM withdrawals.</p></div>
+      <div class="tl-item"><span class="yr">2011</span><b>Co-founds Accendolaw</b><p>Barristers and Solicitors, growing into a commercial practice in Lekki Phase 1, Lagos.</p></div>
+      <div class="tl-item"><span class="yr">2017</span><b>Notary Public of the Federal Republic of Nigeria</b><p>Appointed to the office of Notary Public.</p></div>
+      <div class="tl-item"><span class="yr">2023</span><b>Senior Advocate of Nigeria</b><p>Conferred with the highest distinction in the Nigerian legal profession, in recognition of extraordinary contributions to the development of law in Nigeria. The rank is the equivalent of King's Counsel in the United Kingdom.</p></div>
+      <div class="tl-item"><span class="yr">2024</span><b>Accendolaw Partners LP</b><p>The practice elevated to a limited partnership. He serves as Head of Dispute Resolution.</p></div>
+      <div class="tl-item"><span class="yr">2025</span><b>Chairman, Editorial Board, NBA Lagos Branch</b><p>Leading the Branch's editorial work, and building the scholarship that will carry into the forthcoming textbook.</p></div>
+    </div>
   </div>
 </section>
 
@@ -179,51 +285,40 @@
   <div class="wrap book-grid">
     <div>
       <div class="book-cover">
-        <span class="bc-kick sans">A Forthcoming Textbook</span>
+        <span class="bc-kick">A Forthcoming Textbook</span>
         <span class="bc-title">The Law of Cyberspace and Decentralised Finance</span>
-        <span class="bc-auth sans">Tochukwu J. Onyiuke, SAN</span>
+        <span class="bc-auth">Tochukwu J. Onyiuke, SAN</span>
       </div>
     </div>
     <div>
-      <span class="forth sans">Forthcoming · Reserve Your Copy</span>
-      <h2>The Book the Profession Has Been Waiting For</h2>
-      <p class="sec-sub sans" style="margin-bottom:26px;">Where does law end and the blockchain begin? Drawing on years of C.T.L.R. scholarship and frontline practice in technology disputes, this textbook maps the legal architecture of cyberspace and decentralised finance — for practitioners, regulators and the academy.</p>
-      <div class="cta-row sans">
-        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day.%20I%20would%20like%20to%20reserve%20a%20copy%20of%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance%20by%20Tochukwu%20J.%20Onyiuke%2C%20SAN.">📖 Reserve a Copy on WhatsApp</a>
-        <a class="btn btn-ghost" href="mailto:tochukwu@accendo-law.com?subject=Pre-order%20interest%3A%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance">Register Interest by Email</a>
+      <span class="forth">In Preparation · Publication Targeted January</span>
+      <h2>A global book for a borderless subject</h2>
+      <p class="sec-sub" style="margin-bottom:24px">Where does the law end and the blockchain begin? Drawing on eleven articles in the C.T.L.R. and on frontline practice in technology disputes, this textbook maps the legal architecture of cyberspace and decentralised finance for practitioners, regulators and the academy.</p>
+      <p class="sans" style="font-size:13.5px;color:var(--mut);line-height:1.7;margin-bottom:26px">Its subject is global, and its readership is global. This portal is built to serve that readership: the authoritative index of the author's scholarship, pointing every reader to the publisher who sells the work.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day.%20I%20wish%20to%20register%20my%20interest%20in%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance%20by%20Tochukwu%20J.%20Onyiuke%2C%20SAN.">Register Your Interest</a>
+        <a class="btn btn-ghost" href="mailto:tochukwu@accendo-law.com?subject=Publication%20interest%3A%20The%20Law%20of%20Cyberspace%20and%20Decentralised%20Finance">Enquire by Email</a>
       </div>
-      <p class="sans" style="margin-top:18px;font-size:12.5px;color:var(--mut);">Launch details, reviews and ordering will be announced on this portal.</p>
+      <p class="sans" style="margin-top:18px;font-size:12px;color:var(--mut2);line-height:1.6">Publisher, launch date and ordering details will be announced here. No payment is taken on this portal.</p>
     </div>
   </div>
 </section>
 
-<section id="service">
+<section id="contact" style="background:var(--ink2);border-top:1px solid var(--line)">
   <div class="wrap">
-    <p class="sec-kick sans">Arbitration &amp; Service to the Profession</p>
-    <h2>Beyond the Courtroom</h2>
-    <div class="svc sans" style="margin-top:30px;">
-      <div><b>Arbitration — MCIArb (UK)</b><p>Member of the Chartered Institute of Arbitrators; available for appointment in commercial arbitration.</p></div>
-      <div><b>Editorial Board Chairman</b><p>Chairman, Editorial Board, NBA Lagos Branch (2025–date); member, 2020–2024.</p></div>
-      <div><b>Notary Public</b><p>Appointed Notary Public of the Federal Republic of Nigeria, 2017.</p></div>
-      <div><b>Formation</b><p>LL.B. (Jos) · B.L. (Abuja) · M.Sc. Financial Management, Middlesex University, London. Early practice at Punuka Attorneys &amp; Solicitors under Dr. Anthony Idigbe, SAN.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="wrap">
-    <p class="sec-kick sans">Chambers</p>
+    <p class="sec-kick">Chambers</p>
     <h2>Brief the Silk</h2>
-    <div class="c-grid" style="margin-top:30px;">
-      <div class="sans">
-        <div class="c-item"><b>Chambers</b><span>Accendolaw Partners LP<br>9B Christ Avenue, Lekki Phase 1, Lagos</span></div>
+    <div class="c-grid">
+      <div>
+        <div class="c-item"><b>Chambers</b><span>Accendolaw Partners LP<br>9B Christ Avenue, Lekki Phase 1, Lagos, Nigeria</span></div>
         <div class="c-item"><b>Email</b><a href="mailto:tochukwu@accendo-law.com">tochukwu@accendo-law.com</a></div>
-        <div class="c-item"><b>Practice</b><span>Dispute Resolution · Appellate Advocacy · Technology, AI and Data Protection · Insolvency · Arbitration</span></div>
+        <div class="c-item"><b>Practice</b><span>Dispute Resolution · Appellate Advocacy · Arbitration · AI and Technology Law · Data Protection · Insolvency · Intellectual Property</span></div>
+        <div class="c-item"><b>Professional</b><span><a href="https://www.linkedin.com/in/tochukwu-onyiuke-san" rel="noopener">LinkedIn profile</a></span></div>
       </div>
-      <div class="wa-box sans">
-        <h3>Instructions &amp; Appointments</h3>
+      <div class="wa-box">
+        <h3>Instructions and Appointments</h3>
         <p>For briefs, arbitration appointments, speaking engagements and scholarly enquiries.</p>
-        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day.%20I%20wish%20to%20reach%20the%20chambers%20of%20Tochukwu%20J.%20Onyiuke%2C%20SAN%20regarding%20a%20matter.">💬 Contact the Chambers</a>
+        <a class="btn btn-gold" href="https://wa.me/2347034090950?text=Good%20day%2C%20I%20wish%20to%20reach%20the%20chambers%20of%20Tochukwu%20J.%20Onyiuke%2C%20SAN%20regarding%20a%20matter.">Contact the Chambers</a>
       </div>
     </div>
   </div>
@@ -231,13 +326,122 @@
 
 <footer>
   <div class="wrap">
-    <div class="f-in sans">
-      <small>© 2026 Tochukwu J. Onyiuke, SAN · Lagos, Nigeria</small>
+    <div class="f-in">
+      <small>&copy; 2026 Tochukwu J. Onyiuke, SAN · Lagos, Nigeria</small>
       <small>Advocate · Arbitrator · Author</small>
     </div>
-    <div class="disclaim sans"><b>COMPLIMENTARY EXECUTIVE PREVIEW</b> — This concept portal was prepared for the Learned Silk by Olamide (Legal Web Developer) to demonstrate a proposed personal scholarly portal (tochukwuonyiukesan.com). All content is drawn from published sources and remains subject to the Learned Silk's review, correction and approval. Not yet an official website.</div>
+    <div class="disclaim"><b>COMPLIMENTARY EXECUTIVE PREVIEW.</b> This concept portal was prepared for the Learned Silk by Olamide, legal web developer, to demonstrate the proposed personal scholarly portal at tochukwuonyiukesan.com. All content is drawn from published sources and remains subject to the Learned Silk's review, correction and approval. This is not yet an official website.</div>
+    <a class="backtop" href="#top">Back to top</a>
   </div>
 </footer>
 
+<script>
+(function () {
+  "use strict";
+
+  var RECORD = [
+    {cat:"case", tag:"Supreme Court of Nigeria · (2021) 12 NWLR (Part 1789) · Locus Classicus", title:"Pillars Nigeria Limited v. Desbordes and Another", body:"A leading authority of the Supreme Court of Nigeria, cited across the Nigerian courts and among the defining decisions in its field."},
+    {cat:"case", tag:"Supreme Court of Nigeria · (2022) JELR 109884 (SC) · Locus Classicus", title:"Chibueze Ojeh v. Federal Republic of Nigeria", body:"A landmark criminal appeal decided at the apex court, now standard reference material in Nigerian criminal practice."},
+    {cat:"matter", tag:"Notable Matter", title:"Nigeria's first banking class action", body:"Initiated Nigeria's first ever class action on electronic transactions, brought against all Nigerian commercial banks and the Central Bank of Nigeria on behalf of victims of unauthorised ATM withdrawals."},
+    {cat:"matter", tag:"Notable Matter", title:"N1.6 billion recovered for the Federation", body:"Counsel in escheatment proceedings resulting in N1,600,000,000 recovered for the Federal Government of Nigeria."},
+    {cat:"matter", tag:"Notable Matter", title:"N1 billion in corruption proceeds traced", body:"Lead adviser in the tracing and recovery of N1,000,000,000 in corruption proceeds for the Federal Government of Nigeria."},
+    {cat:"matter", tag:"Notable Matter", title:"30 million dollar money laundering defence", body:"Led a team defending a client in a high profile money laundering matter involving in excess of 30,000,000 dollars at the Federal High Court, Lagos."},
+    {cat:"matter", tag:"Notable Matter", title:"Receivership over a facility exceeding N1 billion", body:"Counsel to a Receiver and Manager appointed by Fidelity Bank over an unpaid loan facility exceeding N1,000,000,000."},
+    {cat:"matter", tag:"Notable Matter", title:"10 million dollar fintech financing", body:"Advised a leading fintech company on the injection of over 10,000,000 dollars as equity and debt finance by a globally known venture capitalist."},
+    {cat:"article", tag:"C.T.L.R. · 2024 · Volume 30, Issue 1", title:"Artificial Intelligence in Nigeria's Financial Sector: Lessons from the System Bug in Interswitch v. UBA Plc", body:"Thomson Reuters and Sweet and Maxwell, United Kingdom."},
+    {cat:"article", tag:"C.T.L.R. · 2024 · Volume 30, Issue 2", title:"Testing the Boundaries of Legal Liability in the Usage of Artificial Intelligence", body:"Thomson Reuters and Sweet and Maxwell, United Kingdom."},
+    {cat:"article", tag:"C.T.L.R. · 2025 · Volume 31, Issue 1", title:"Right to be Forgotten: Understanding the Nigerian Data Regulatory Framework", body:"Thomson Reuters and Sweet and Maxwell, United Kingdom."},
+    {cat:"article", tag:"C.T.L.R. · 2025 · Volume 31, Issue 5", title:"Controlling Realities: The Role of Law in Deep Fake Technology", body:"Thomson Reuters and Sweet and Maxwell, United Kingdom."},
+    {cat:"article", tag:"C.T.L.R. · 2025 · Volume 31, Issue 7", title:"Legal Protection and Frameworks of Algorithms in the Digital Age", body:"Thomson Reuters and Sweet and Maxwell, United Kingdom."},
+    {cat:"article", tag:"C.T.L.R. · 2021 to 2023", title:"Six earlier contributions to the Review", body:"Electronic transactions, trademark law in cyberspace, electoral law in cyberspace and cybercrime liability."},
+    {cat:"article", tag:"Amicus Curiae · University of London", title:"Contributions to Amicus Curiae", body:"Journal of the Institute of Advanced Legal Studies, School of Advanced Study, University of London."},
+    {cat:"article", tag:"Journal of International Maritime Law · United Kingdom", title:"Contributions on maritime law", body:"Published in the Journal of International Maritime Law."},
+    {cat:"article", tag:"IntechOpen · London", title:"Challenges in the Nigerian Correctional Facilities and the Way Forward", body:"Perspective chapter published by IntechOpen, London."},
+    {cat:"article", tag:"BRIPAN Law Review · Nigerian Bar Journal", title:"Insolvency practice and the profession", body:"Further peer reviewed publication in the domestic journals of record."},
+    {cat:"office", tag:"2023", title:"Senior Advocate of Nigeria", body:"Conferred with the highest distinction in the Nigerian legal profession, the equivalent of King's Counsel in the United Kingdom."},
+    {cat:"office", tag:"2025 to date", title:"Chairman, Editorial Board, Nigerian Bar Association, Lagos Branch", body:"Leading the editorial work of the Lagos Branch. Member of the same Editorial Board from 2020 to 2024."},
+    {cat:"office", tag:"2017", title:"Notary Public of the Federal Republic of Nigeria", body:"Appointed to the office of Notary Public."},
+    {cat:"office", tag:"Chartered Institute of Arbitrators", title:"MCIArb (UK)", body:"Member of the Chartered Institute of Arbitrators, United Kingdom, and available for appointment in commercial arbitration."},
+    {cat:"office", tag:"2024 to date", title:"Head of Dispute Resolution, Accendolaw Partners LP", body:"Leading the firm's dispute resolution practice following its elevation to a limited partnership."},
+    {cat:"office", tag:"2023 and 2024", title:"Organising Committee, Lagos Bar Law Week", body:"Member of the Organising Committee for the Law Week in both years."}
+  ];
+
+  var q = document.getElementById("q");
+  var results = document.getElementById("results");
+  var countEl = document.getElementById("count");
+  var chips = document.getElementById("chips");
+  var activeCat = "all";
+
+  var LABEL = {case:"Reported Authority", article:"Publication", matter:"Notable Matter", office:"Office and Honour"};
+
+  function esc(s) {
+    return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+
+  function render() {
+    var term = (q.value || "").toLowerCase().trim();
+    var out = RECORD.filter(function (r) {
+      var catOk = activeCat === "all" || r.cat === activeCat;
+      if (!catOk) return false;
+      if (!term) return true;
+      return (r.title + " " + r.body + " " + r.tag + " " + r.cat).toLowerCase().indexOf(term) > -1;
+    });
+
+    if (!out.length) {
+      results.innerHTML = '<div class="empty">Nothing in the record matches that search.</div>';
+      countEl.textContent = "No entries";
+      return;
+    }
+
+    results.innerHTML = out.map(function (r) {
+      return '<article class="rec">' +
+        '<span class="tag">' + esc(LABEL[r.cat]) + ' · ' + esc(r.tag) + '</span>' +
+        '<h3>' + esc(r.title) + '</h3>' +
+        '<p>' + esc(r.body) + '</p>' +
+        '</article>';
+    }).join("");
+
+    countEl.textContent = out.length + (out.length === 1 ? " entry" : " entries") + " in the record";
+  }
+
+  q.addEventListener("input", render);
+
+  chips.addEventListener("click", function (e) {
+    var b = e.target.closest(".chip");
+    if (!b) return;
+    Array.prototype.forEach.call(chips.querySelectorAll(".chip"), function (c) {
+      c.classList.remove("on");
+    });
+    b.classList.add("on");
+    activeCat = b.getAttribute("data-cat");
+    render();
+  });
+
+  document.getElementById("reset").addEventListener("click", function () {
+    q.value = "";
+    activeCat = "all";
+    Array.prototype.forEach.call(chips.querySelectorAll(".chip"), function (c) {
+      c.classList.toggle("on", c.getAttribute("data-cat") === "all");
+    });
+    render();
+    q.focus();
+  });
+
+  var burger = document.getElementById("burger");
+  var mob = document.getElementById("mob");
+  burger.addEventListener("click", function () {
+    var open = mob.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  mob.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+      mob.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  render();
+})();
+</script>
 </body>
 </html>
